@@ -1,8 +1,8 @@
-### CafeBazzarTools
+## CafeBazzarTools
 
 Easy lib for [Cafe Bazzar](https://www.cafebazaar.ir) payments and ...
 
-#### Config build.gradle
+### Config build.gradle
 
 ```` 
 repositories {
@@ -10,18 +10,18 @@ repositories {
       maven { url "https://www.jitpack.io" }
 }
 ````
-#### Add dependency on build.gradle
+### Add dependency on build.gradle
 
 
 ```` 
 implementation 'com.github.MrNadimi:CafeBazzarTools:1.0.0'
 ````
 
-#### How to use?
+### How to use?
 
 Easy! Just follow the examples
 
-###### First: Create a Cafebazzar Object
+### First: Create a Cafebazzar Object
 
 ````Java
 CafeBazzar cafeBazzar = CafeBazzar.getInstance(this, base64EncodedPublicKey, new OnCafeBazzarListener() {
@@ -62,14 +62,14 @@ CafeBazzar cafeBazzar = CafeBazzar.getInstance(this, base64EncodedPublicKey, new
         });
 ```` 
 
-##### Start: Now you can start the cafeBazzar object
+### Start: Now you can start the cafeBazzar object
 
 ````Java
 cafeBazzar.start();
 ````
 When you call this method, the result calls **onStart** method inside the listener object
 
-##### Check user loging in status
+### Check user loging in status
 
 When 'cafebazzar' started successfully, inside the **onStart** method we can check user login status
 
@@ -82,7 +82,7 @@ When 'cafebazzar' started successfully, inside the **onStart** method we can che
 }
 ````
 
-##### Check Products:
+### Check Products:
 
 ````Java
 List<String> skus = new ArrayList<>();
@@ -92,7 +92,7 @@ cafeBazzar.productsInventory(true , skus);
 
 We can get the results inside the **onProductsInventory** method
 
-##### Buying:
+### Buying:
 
 ````Java
 String palyload = payload or null ;
@@ -101,7 +101,7 @@ cafeBazzar.buy("Donate" , palyload);
 
 We can get the results inside the **onBuyInventory** method
 
-##### Spending the purchase:
+### Spending the purchase:
 
 ````Java
  @Override
@@ -112,7 +112,7 @@ public void onBuyInventory(CafeBazzar cafeBazzar, boolean success, Purchase purc
 
 We can get the results inside the **onSpendPurchase** method
 
-#### Important: dispose the cafebazzar object inside the activity and implement onActivityResult method
+### Important: dispose the cafebazzar object inside the activity and implement onActivityResult method
 
 
 ````Java
