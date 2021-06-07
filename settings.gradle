@@ -1,0 +1,3 @@
+include ':cafebazzartools'
+include ':app'
+rootProject.name = "CafeBazzarExp"
