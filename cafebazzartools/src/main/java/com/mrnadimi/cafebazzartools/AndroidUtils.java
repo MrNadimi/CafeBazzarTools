@@ -7,6 +7,7 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import androidx.annotation.IntRange;
 
@@ -63,7 +64,7 @@ public class AndroidUtils {
         return result;
     }
 
-    public static boolean isNetworkConncted(Context context){
+    public static boolean isNetworkConnected(Context context){
         return getConnectionType(context) != 0;
     }
 

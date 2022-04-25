@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.util.Log;
 import android.widget.Toast;
-
-import androidx.annotation.ChecksSdkIntAtLeast;
 
 import com.mrnadimi.cafebazzartools.exceptions.BuyingProductCancelException;
 import com.mrnadimi.cafebazzartools.exceptions.CafeBazzarException;
@@ -57,7 +54,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (AndroidUtils.isNetworkConncted(helper.mContext)) {
+        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -76,7 +73,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (AndroidUtils.isNetworkConncted(helper.mContext)) {
+        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -86,6 +83,7 @@ public class CafeBazzar {
             listener.onLoginStatus(this,false , false , ex);
         }
     }
+
 
 
 
@@ -107,7 +105,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (AndroidUtils.isNetworkConncted(helper.mContext)) {
+        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -149,7 +147,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (AndroidUtils.isNetworkConncted(helper.mContext)) {
+        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -174,7 +172,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (AndroidUtils.isNetworkConncted(helper.mContext)) {
+        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }

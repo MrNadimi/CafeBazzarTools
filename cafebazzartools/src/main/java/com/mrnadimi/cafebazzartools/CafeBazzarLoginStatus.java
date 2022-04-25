@@ -10,7 +10,7 @@ import android.util.Log;
 
 import com.farsitel.bazaar.ILoginCheckService;
 
-public class CafeBazzarLoginStatus {
+class CafeBazzarLoginStatus {
 
     private static final String TAG = "Bazzar:LoginStatus";
 
@@ -31,6 +31,7 @@ public class CafeBazzarLoginStatus {
     }
 
     protected boolean isUserLogged() throws RemoteException {
+        if (service == null)return false;
         return service.isLoggedIn();
     }
 
