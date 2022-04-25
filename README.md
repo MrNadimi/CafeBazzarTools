@@ -14,7 +14,7 @@ repositories {
 
 
 ```` 
-implementation 'com.github.MrNadimi:CafeBazzarTools:1.0.0'
+implementation 'com.github.MrNadimi:CafeBazzarTools:1.0.2'
 ````
 
 ### How to use?
