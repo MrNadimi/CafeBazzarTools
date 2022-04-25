@@ -11,7 +11,6 @@ public class PackageUtils {
     /**
      *
      * @param context The context
-     *                ...
      * @return if application download from play store or not
      */
     public static boolean isDonwloadedFromPlayStore(Context context) {

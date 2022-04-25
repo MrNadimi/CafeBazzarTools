@@ -54,7 +54,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
+        }else if (AndroidUtils.isNetworkNotConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -73,7 +73,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
+        }else if (AndroidUtils.isNetworkNotConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -105,7 +105,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
+        }else if (AndroidUtils.isNetworkNotConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -147,7 +147,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
+        }else if (AndroidUtils.isNetworkNotConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
@@ -172,7 +172,7 @@ public class CafeBazzar {
         if (!PackageUtils.isCafeBazzarInstalled(helper.mContext)){
             listener.onCafeBazzarIsNotInslling(this);
             return;
-        }else if (!AndroidUtils.isNetworkConnected(helper.mContext)) {
+        }else if (AndroidUtils.isNetworkNotConnected(helper.mContext)) {
             listener.onInternetConnectionError(CafeBazzar.cafeBazzar);
             return;
         }
